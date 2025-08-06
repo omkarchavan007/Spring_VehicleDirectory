@@ -12,5 +12,7 @@ public interface VehicleService {
     // Save multiple vehicle data at once
     public List<Vehicles> saveAllVehicles(List<Vehicles> vehicles);
 
+    // Get Vehicle data by ID
+    Vehicles getByID(int id);
 
 }

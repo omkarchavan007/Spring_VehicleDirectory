@@ -27,4 +27,10 @@ public class VehicleServiceImpl implements VehicleService {
         return List.of();
     }
 
+    @Override
+    public Vehicles getByID(int id) {
+       Vehicles getVehicle = vehicleRepo.findById(id).orElseThrow(() -> new NullPointerException("Id not found"+id));
+        return getVehicle;
+    }
+
 }
