@@ -10,6 +10,4 @@ public class VehicleManagementSystemApplication {
 		SpringApplication.run(VehicleManagementSystemApplication.class, args);
 	}
 
-	
-
 }
