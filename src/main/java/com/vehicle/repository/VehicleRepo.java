@@ -1,4 +1,4 @@
 package com.vehicle.repository;
 
-public class StudentRepo {
+public class VehicleRepo {
 }
