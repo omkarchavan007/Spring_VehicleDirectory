@@ -19,4 +19,5 @@ public class VehicleServiceImpl implements VehicleService {
     Vehicles vehicles1 = vehicleRepo.save(vehicles);
         return "Vehicle info Saved Successfully";
     }
+
 }
