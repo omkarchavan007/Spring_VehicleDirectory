@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("Vehicles")
 public class MyController {
@@ -26,4 +28,10 @@ public class MyController {
     }
 
     // Add Multiple vehicles at once
+    @PostMapping("/addMultipleVehicles")
+    public ResponseEntity<List<Vehicles>> addMultipleVehicles(@RequestBody List<Vehicles> vehicles)
+    {
+     List<Vehicles> vehicleslist = vehicleService.saveAllVehicles(vehicles);
+        return new ResponseEntity<>(vehicleslist, HttpStatus.OK);
+    }
 }
