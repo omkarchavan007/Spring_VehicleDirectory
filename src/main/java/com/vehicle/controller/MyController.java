@@ -7,9 +7,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("Vehicles")
 public class MyController {
 
     @Autowired
@@ -22,4 +24,6 @@ public class MyController {
         vehicleService.saveVehicles(vehicles);
         return new ResponseEntity<>("Vehicle data Saved", HttpStatus.OK);
     }
+
+    // Add Multiple vehicles at once
 }
