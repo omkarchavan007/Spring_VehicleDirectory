@@ -57,14 +57,4 @@ public class Vehicles {
         this.vehicleName = vehicleName;
     }
 
-    @Override
-    public String toString() {
-        return "Vehicles{" +
-                "id=" + id +
-                ", vehicleColor='" + vehicleColor + '\'' +
-                ", VehicleNo='" + VehicleNo + '\'' +
-                ", vehicleYear=" + vehicleYear +
-                ", vehicleName='" + vehicleName + '\'' +
-                '}';
-    }
 }
